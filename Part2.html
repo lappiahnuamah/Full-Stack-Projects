@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+  src="http://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="click">Hello World</h1>
+    <input type="text" value="" placeholder="Enter name"> <br>
+    <button>Click Me</button>
+    <!-- <script src="Part2_Function_Exercises.js"></script> -->
+    <!-- <script src="Part4_Array_Exercise.js"></script> -->
+    <!-- <script src="Part6_Objects_Exercise.js"></script> -->
+    <script src="jquery.js"></script>
+    <script>
+
+      const  Css = {
+        'color': 'red',
+        'background-color': 'blue',
+        'font-size':'43px',
+        'border':'2px solid orange'
+      }
+    $(document).ready(function(){
+      $('button').click(function(){
+        // alert('JQuery is loaded');
+        $('h1').text('It is JQuery Running ooo!!!').css(Css);
+      })
+    })
+
+    $('input').keypress(function(event){
+      console.log(event.target.value);
+    })
+    </script>
+</body>
+</html>
